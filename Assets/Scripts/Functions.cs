@@ -7,9 +7,13 @@ public class Functions : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public TextMeshProUGUI dialouge;
-    private void Start()
+    private int gem = 0;
+    public TextMeshProUGUI gemCounter;
+    
+
+    public void Start()
     {
-        Debug.Log("Scene Change!");
+        gemCounter.text = "Gems:0";
     }
 
     public void SceneChange(string sceneName)
@@ -21,6 +25,13 @@ public class Functions : MonoBehaviour
     {
         dialouge.text = text;
     }
+
+    public void CollectGem()
+    {
+        gem++;
+        gemCounter.text = "Gems: " + gem;
+    }
+        
     // Update is called once per frame
     void Update()
     {
