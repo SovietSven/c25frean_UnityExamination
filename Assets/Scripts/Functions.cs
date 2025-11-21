@@ -26,6 +26,17 @@ public class Functions : MonoBehaviour
         dialouge.text = text;
     }
 
+    public void Gate()
+    {
+        if (gem >= 3)
+        {
+            SceneChange("Scene2");
+        }
+        else
+        {
+            dialouge.text = "Collect 3 gems to pay the toll";
+        }
+    }
     public void CollectGem()
     {
         gem++;

@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 7
+  player: {fileID: 3341393671426122818}
 --- !u!114 &1802674979663227130
 MonoBehaviour:
   m_ObjectHideFlags: 0
