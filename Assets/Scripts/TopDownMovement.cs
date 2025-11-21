@@ -9,6 +9,7 @@ using UnityEngine.InputSystem;
 public class TopDownMovement : MonoBehaviour
 {
     public float maxSpeed = 7;
+    public Animator player;
     
     public bool controlEnabled { get; set; } = true;    // You can edit this variable from Unity Events
     
@@ -39,6 +40,16 @@ public class TopDownMovement : MonoBehaviour
         else
         {
             rb.linearVelocity = Vector2.zero;
+        }
+
+        if (moveInput != Vector2.zero)
+        {
+            player.SetBool("Walking", true);
+        }
+
+        if (moveInput == Vector2.zero)
+        {
+            player.SetBool("Walking", false);
         }
         
         // Write code for walking animation here. (Suggestion: send your current velocity into the Animator for both the x- and y-axis.)
