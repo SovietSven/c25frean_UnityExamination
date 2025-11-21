@@ -211,7 +211,9 @@ RotationConstraint:
   m_AffectRotationZ: 1
   m_Active: 1
   m_IsLocked: 1
-  m_Sources: []
+  m_Sources:
+  - sourceTransform: {fileID: 0}
+    weight: 1
 --- !u!114 &523876809140363076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 108425d62a24932419dfb302e764e808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialouge: {fileID: 0}
+  gemCounter: {fileID: 0}
 --- !u!1 &3334600332069432119
 GameObject:
   m_ObjectHideFlags: 0
