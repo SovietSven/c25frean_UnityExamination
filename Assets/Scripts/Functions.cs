@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Functions : MonoBehaviour
 {
@@ -9,8 +10,10 @@ public class Functions : MonoBehaviour
     public TextMeshProUGUI dialouge;
     private int gem = 0;
     public TextMeshProUGUI gemCounter;
-    
-
+    public float volume;
+    public Slider slider;
+    public AudioSource music;
+    public AudioSource sound;
     public void Start()
     {
         gemCounter.text = "Gems:0";
@@ -46,6 +49,12 @@ public class Functions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (SceneManager.GetActiveScene().name == "StartMenu")
+        {
+            volume = slider.value;
+            dialouge.text = volume*100 + "%";
+            music.volume = volume;
+            sound.volume = volume;
+        }
     }
 }

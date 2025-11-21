@@ -20915,8 +20915,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 667226325}
         m_TargetAssemblyTypeName: Functions, Assembly-CSharp
-        m_MethodName: SceneChange
-        m_Mode: 5
+        m_MethodName: Gate
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -21057,7 +21057,7 @@ GameObject:
   - component: {fileID: 1731716221}
   - component: {fileID: 1731716220}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21456,8 +21456,8 @@ SceneRoots:
   - {fileID: 7934253421365797836}
   - {fileID: 253138212}
   - {fileID: 297393846}
+  - {fileID: 91175062}
+  - {fileID: 502367521}
+  - {fileID: 1923727628}
   - {fileID: 1731716223}
   - {fileID: 774391331}
-  - {fileID: 502367521}
-  - {fileID: 91175062}
-  - {fileID: 1923727628}
